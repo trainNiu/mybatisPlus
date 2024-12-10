@@ -2,7 +2,8 @@ package com.example.aicaiframework.demos.entity.base;
 
 
 
-import com.whzp.framework.redis.RedisTemplateAdapter;
+
+import com.example.aicaiframework.demos.redis.RedisTemplateAdapter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ModelAttribute;
 
@@ -23,8 +24,8 @@ public class BaseController {
 
     protected HttpServletResponse resp;
 
-    @Resource(name = "redisTemplateAdapter")
-    public RedisTemplateAdapter<String> redisTemplate;
+//    @Resource(name = "redisTemplateAdapter")
+//    public RedisTemplateAdapter<String> redisTemplate;
 
 
     @ModelAttribute

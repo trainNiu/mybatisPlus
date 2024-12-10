@@ -1,7 +1,7 @@
 package com.example.aicaiframework.demos.entity.base;
 
+
 import cn.hutool.core.util.StrUtil;
-import com.whzp.framework.utils.SortField;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
