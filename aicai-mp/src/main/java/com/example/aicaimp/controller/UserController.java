@@ -1,6 +1,8 @@
 package com.example.aicaimp.controller;
 
 
+import com.example.aicaiframework.demos.object.Result;
+import com.example.aicaimp.entity.UserEntity;
 import com.example.aicaimp.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -26,8 +28,9 @@ public class UserController extends BaseController {
     private IUserService userService;
 
     @GetMapping("/getById")
-    public String getById(){
-        return userService.getById(1).toString();
+    public Result<UserEntity> getById(){
+        UserEntity userEntity = userService.getById(1);
+        return Result.success(userEntity);
     }
 
 }
