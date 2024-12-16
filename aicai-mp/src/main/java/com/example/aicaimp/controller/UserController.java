@@ -19,15 +19,15 @@ import com.example.aicaiframework.demos.entity.base.BaseController;
  * @since 2024-12-10
  */
 @RestController
-@RequestMapping("/userEntity")
+@RequestMapping("/user")
 public class UserController extends BaseController {
 
     @Autowired
     private IUserService userService;
 
     @GetMapping("/getById")
-    public String getById(@RequestParam Long id){
-        return userService.getById(id).toString();
+    public String getById(){
+        return userService.getById(1).toString();
     }
 
 }
