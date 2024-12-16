@@ -1,13 +1,9 @@
 package com.example.aicaiframework.demos.entity.base;
 
 
-
-
-import com.example.aicaiframework.demos.redis.RedisTemplateAdapter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ModelAttribute;
 
-import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.net.URLEncoder;
