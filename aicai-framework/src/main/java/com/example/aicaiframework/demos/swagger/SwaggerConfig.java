@@ -84,19 +84,19 @@ public class SwaggerConfig {
                 .forCodeGeneration(true)
                 .pathMapping("/")
                 .select()
-                .apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))
-                .paths(PathSelectors.any()).build()
-                .enable(true);
-//        docket.globalOperationParameters(parameters);
+                .apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class)) //获取扫描接口的方式，基于注解扫描，也可以基于包
+                .paths(PathSelectors.any()).build() //过滤什么路径
+                .enable(true); //不能在浏览器访问，true 才能在浏览器访问，false 则不能访问
+//        docket.globalOperationParameters(parameters);  //token校验 以参数方式header
         return docket;
     }
 
     private ApiInfo apiInfo(SwaggerProperties swaggerProperties) {
         return new ApiInfoBuilder()
-                .title(swaggerProperties.getTitle())
-                .description(swaggerProperties.getDescription())
-                .contact(new Contact(swaggerProperties.getContactName(), swaggerProperties.getContactUrl(), swaggerProperties.getContactEmail()))
-                .version(swaggerProperties.getVersion())
+                .title(swaggerProperties.getTitle()) // 配置页面的标题
+                .description(swaggerProperties.getDescription()) // 配置页面的简介
+                .contact(new Contact(swaggerProperties.getContactName(), swaggerProperties.getContactUrl(), swaggerProperties.getContactEmail())) // 配置页面联系，包括姓名，url，email
+                .version(swaggerProperties.getVersion()) // 配置页面的版本
                 .build();
     }
 
