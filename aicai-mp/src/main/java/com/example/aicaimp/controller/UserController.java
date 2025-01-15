@@ -36,8 +36,6 @@ public class UserController extends BaseController {
     private IUserService userService;
     @Autowired
     private RedisTemplateAdapter redisTemplateAdapter;
-    @Autowired
-    private RedisTemplate redisTemplate;
 
     @ApiOperation(value = "根据ID查询用户信息")
     @GetMapping("/getById")
