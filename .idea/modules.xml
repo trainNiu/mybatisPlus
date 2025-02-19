@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/aicai-Ai/aicai-Ai.iml" filepath="$PROJECT_DIR$/aicai-Ai/aicai-Ai.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aicai-framework/aicai-framework.iml" filepath="$PROJECT_DIR$/aicai-framework/aicai-framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aicai-mbg/aicai-mbg.iml" filepath="$PROJECT_DIR$/aicai-mbg/aicai-mbg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aicai-mp/aicai-mp.iml" filepath="$PROJECT_DIR$/aicai-mp/aicai-mp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aicai-order/aicai-order.iml" filepath="$PROJECT_DIR$/aicai-order/aicai-order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aicai-rabbitmq/aicai-rabbitmq.iml" filepath="$PROJECT_DIR$/aicai-rabbitmq/aicai-rabbitmq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aicai-user/aicai-user.iml" filepath="$PROJECT_DIR$/aicai-user/aicai-user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/mybatisPlus.iml" filepath="$PROJECT_DIR$/.idea/mybatisPlus.iml" />
+    </modules>
+  </component>
+</project>

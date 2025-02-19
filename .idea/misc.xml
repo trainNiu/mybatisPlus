@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/aicai-framework/pom.xml" />
+        <option value="$PROJECT_DIR$/aicai-mbg/pom.xml" />
+        <option value="$PROJECT_DIR$/aicai-mp/pom.xml" />
+        <option value="$PROJECT_DIR$/aicai-order/pom.xml" />
+        <option value="$PROJECT_DIR$/aicai-rabbitmq/pom.xml" />
+        <option value="$PROJECT_DIR$/aicai-user/pom.xml" />
+        <option value="$PROJECT_DIR$/aicai-Ai/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

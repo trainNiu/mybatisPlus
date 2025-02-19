@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="aicai-user" />
+        <module name="aicai-rabbitmq" />
+        <module name="aicai-Ai" />
+        <module name="aicai-mp" />
+        <module name="aicai-order" />
+        <module name="aicai-framework" />
+        <module name="aicai-mbg" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Ai" target="17" />
+      <module name="aicai-Ai" target="17" />
+      <module name="aicai-framework" target="1.8" />
+      <module name="aicai-mbg" target="1.8" />
+      <module name="aicai-mp" target="1.8" />
+      <module name="aicai-order" target="1.8" />
+      <module name="aicai-rabbitmq" target="1.8" />
+      <module name="aicai-user" target="1.8" />
+      <module name="deepseek" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
