@@ -19,6 +19,8 @@ public class AckConsumerTwo {
         //创建信道
         Channel channel = RabbitMqUtils.getChannel();
         System.out.println("consumer2收到消息时间较长");
+        //设置预取值
+        channel.basicQos(2);
         //消费消息的回调
         DeliverCallback deliverCallback = (consumerTag, message) -> {
             //模拟接收消息的延迟 10s

@@ -18,10 +18,13 @@ public class AckConsumer {
     public static void main(String[] args) throws IOException {
         Channel channel = RabbitMqUtils.getChannel();
         System.out.println("consumer1收到消息时间较短");
+        //设置预取值
+        channel.basicQos(5);
         //消费消息回调
         DeliverCallback deliverCallback = (consumerTag, message) -> {
             //模拟接收消息的延迟 1s
             try {
+                Thread.sleep(1000);
                 System.out.println("消息消费成功,内容为："+ new String(message.getBody()));
                 //手动应答：第一个参数表示消息标记tag,第二个参数false标识不进行批量应答
                 channel.basicAck(message.getEnvelope().getDeliveryTag(),false);
